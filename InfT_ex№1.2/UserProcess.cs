@@ -16,10 +16,15 @@ namespace InfT_ex_1._2
         internal void Start()
         {
             var maxCounter = _userArray.Length - 1;
+            var maxValue = _userArray[maxCounter];
 
             for(var i = 0; i <= maxCounter; i++)
             {
                 if (_userArray[i] > maxCounter)
+                {
+                    break;
+                }
+                if (i > maxValue)
                 {
                     break;
                 }
